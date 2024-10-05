@@ -1,0 +1,64 @@
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+#title,
+#subtitle {
+    text-align: center;
+    align-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-variant: small-caps;
+    color: azure;
+}
+
+#entrada {
+    display: grid;
+    background-color: rgb(245, 243, 214);
+    border-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+
+#buscar {
+    display: grid;
+    background-color: rgb(245, 243, 214);
+    width: 75px;
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    text-align: center;
+    align-content: center;
+    border-bottom-style: solid;
+    border-color: black;
+    font-size: medium;
+}
+
+#empty-search {
+    margin-top: 25px;
+    font-variant: small-caps;
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: whitesmoke;
+    text-align: center;
+    align-content: center;
+}
+
+#container-gifs {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: repeat(3, auto);
+}
+
+.gif {
+    width: 500px;
+    height: 500px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+}
