@@ -1,8 +1,11 @@
+/* En el cuerpo del archivo HTML definimos el color de fondo que tendrá la página */
 body {
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 }
 
+/* le damos estilo a las etiquetas h1 y h2 con id "title" y "subtitle" alineando tanto su contenido como el texto de los mismos;
+además de asginarle el tipo y la variante de fuente. Por último, tanto el texto del titulo como del subtitulo serán de color azure */
 #title,
 #subtitle {
     text-align: center;
@@ -12,6 +15,12 @@ body {
     color: azure;
 }
 
+/* Le damos estilo a la etiqueta input con id "entrada" donde el usuario buscará el gif que desee. 
+Para centrar la barra de búsqueda implementamos que el display sea una grilla y de ahí darle un margen izquierdo y derecho con valores auto.
+Este valor asginado a dichas propiedades hace que la barra se ajuste automáticamente al monitor del usuario.
+Luego le damos un fondo de calor como también un borde a dicha barra.
+Con la propiedad text-align el texto que ingresa el usuario se ajusta en el centro de la barra de búsqueda.
+Por último le damos un tipo y un tamaño a la fuente del texto ingresado por el usuario. */
 #entrada {
     display: grid;
     background-color: rgb(245, 243, 214);
@@ -23,6 +32,14 @@ body {
     font-size: large;
 }
 
+/* Le damos estilo a la etiqueta button con id "buscar" donde luego de que el usuario le de click al botón se muestren los gifs relacionados
+al texto de la barra de búsqueda. Para centrar el botón implementamos que el display sea una grilla y de ahí darle un margen 
+izquierdo y derecho con valores auto. Este valor asginado a dichas propiedades hace que la barra se ajuste automáticamente al monitor del usuario.
+Implementamos el plus de darle un margen superior de 10px para separar la barra de búsqueda y el botón.
+Se le da un ancho y un largo a la etiqueta de 75 pixeles por 25 pixeles.
+Luego le damos un fondo de calor como también un color y estilo de borde a dicho botón.
+Con la propiedad text-align el texto que se encuentra en el botón quede centrado.
+Por último le damos un tamaño a la fuente del texto que se encuentra dentro del botón. */
 #buscar {
     display: grid;
     background-color: rgb(245, 243, 214);
@@ -38,6 +55,10 @@ body {
     font-size: medium;
 }
 
+/* Le damos un estilo al texto predeterminado que mostraremos en la etiqueta p con id empty-search en el caso de que el usuario
+no ingrese ningún valor de búsqueda. Para ello primero asignamos la propiedad margin-top para separar el texto del botón.
+Aplicamos en dicho texto el tipo, el tamaño y la variante de fuente como así también el color del mismo.
+Por último, alineamos el texto para que se vea centrado en la pantalla */ 
 #empty-search {
     margin-top: 25px;
     font-variant: small-caps;
@@ -45,15 +66,22 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: whitesmoke;
     text-align: center;
-    align-content: center;
 }
 
+/* Le damos un estilo a la etiqueta div con id container-gifs en donde se mostrarán los gifs.
+Primero le asginamos la propiedad de que el display sea una grilla.
+Posterior a ello, le damos una separación superior de 20px con respecto al botón.
+Por último, definimos la cantidad de columnas como el tamaño de las mismas para que los gifs se muestren en una cuadrícula de 3x3. */ 
 #container-gifs {
     display: grid;
     margin-top: 20px;
     grid-template-columns: repeat(3, auto);
 }
 
+/* Definimos el tamaño de los gifs que se mostrarán en la etiqueta div con id container-gifs. A cada gif le damos una resolución de 500x500 px.
+Luego le damos la separación superior de cada gif en cada una de las columnas de un tamaño de 40px.
+Posterior a ello fijamos el margen izquierdo y derecho de cada gif con valores auto para que queden centrados en la página.
+Por último, definimos la propiedad align-content con el valor center para centrar los gifs en sus respectivas columnas. */
 .gif {
     width: 500px;
     height: 500px;
